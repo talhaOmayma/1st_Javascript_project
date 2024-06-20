@@ -1,0 +1,57 @@
+<!-- defer : permet de retarder l'exécution du script jusqu'à ce que le contenu de la page html soit complètement chargé-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion Etudiants</title>
+    <script src="js/script.js" defer type="module"></script>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+
+    <div class="conainer">
+    <div id="app"></div>
+        <h2> Ajouter étudiant </h2>
+        <form method="post">
+            <div class="mb-3">
+                <label for="nom" class="form-label">Nom</label>
+                <input type="text" class="form-control" name="nom"  id="nom"/>
+            </div>
+            <div class="mb-3">
+                <label for="date" class="form-label">Date</label>
+                <input type="date" class="form-control" name="date"  id="date"/>
+            </div>
+            <div class="mb-3">
+                <label for="note" class="form-label">Note</label>
+                <input type="number" max="20" min="0" step="0.1" class="form-control" name="note"  id="note"/>
+            </div>
+
+            <div class="mb-3">
+              <button class="form-control btn btn-success" id="add">Ajouter</button>
+            </div> 
+            
+        </form>
+        <h2> Liste des étudiants </h2>
+        <span><button class="btn btn-primary" id="refresh">Actualiser la liste</button></span>
+        <div class="table-responsive my-3">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">Nom</th>
+                        <th scope="col">Age</th>
+                        <th scope="col">Note</th>
+                    </tr>
+                </thead>
+                <tbody class="liste-etudiants">
+                   
+                </tbody>
+            </table>
+        </div>
+        
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+{
+  "etudiants": [
+    {
+      "id": "1",
+      "name": "Saadi",
+      "date": "2006/08/15",
+      "note": 18
+    },
+    {
+      "id": "2",
+      "name": "Slimani",
+      "date": "2005/04/21",
+      "note": 13
+    },
+    {
+      "id": "9b18",
+      "name": "omayma",
+      "date": "1996-04-08",
+      "note": "15"
+    },
+    {
+      "id": "4a1a",
+      "name": "rahimi loubna",
+      "date": "1990-05-12",
+      "note": "15"
+    }
+  ]
+}
